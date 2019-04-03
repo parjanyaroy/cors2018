@@ -4,7 +4,9 @@
 
 GET         /services/oauth2/*path           controllers.Application.loginProxy(path)
 POST        /services/oauth2/*path           controllers.Application.loginProxy(path)
+PATCH        /services/oauth2/*path           controllers.Application.loginProxy(path)
 GET         /*path                           controllers.Application.proxy(path)
 POST        /*path                           controllers.Application.proxy(path)
 OPTIONS     /                                controllers.Application.options(path="")
 OPTIONS     /*path                           controllers.Application.options(path)
+PATCH        /*path                           controllers.Application.proxy(path)
